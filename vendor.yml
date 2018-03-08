@@ -18,6 +18,11 @@ lodash:
   assets:
     - lodash.js
 
+systemjs:
+  yarn: true
+  assets:
+    - dist/system.js
+
 url.js:
   yarn: true
   assets:
