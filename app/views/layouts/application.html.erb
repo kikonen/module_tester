@@ -4,7 +4,10 @@
     <title>ModuleTester</title>
     <%= csrf_meta_tags %>
 
+    <%= stylesheet_link_tag    'module_theme', media: 'all'  %>
     <%= stylesheet_link_tag    'application', media: 'all'  %>
+
+    <%= javascript_include_tag 'module_vendor' %>
     <%= javascript_include_tag 'application' %>
   </head>
 

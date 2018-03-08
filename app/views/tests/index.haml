@@ -1,4 +1,5 @@
-%script{ type: "text/javascript", src: "module_tests" }
+= javascript_include_tag 'module_tests'
+
 :javascript
   $(document).ready(function() {
     window.tests.init();
@@ -14,3 +15,6 @@
 
   .pre
     {{ calculated_value }}
+
+.btn.btn-primary
+  Hi
