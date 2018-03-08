@@ -5,7 +5,7 @@ export function init() {
       hello: 'init',
     },
     computed: {
-      calculated_value: function() {
+      calculated_value() {
         return _.upperCase(this.hello);
       }
     }
