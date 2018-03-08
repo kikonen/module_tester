@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'hamlit'
+
 group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
@@ -36,6 +38,10 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'awesome_print'
+
+  # Updating assets is needed only in development mode
+  gem 'bower_vendor'
+#  gem 'bower_vendor', path: '~/work/projects/ruby/bower_vendor'
 end
 
 group :development do

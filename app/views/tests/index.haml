@@ -1,0 +1,16 @@
+%script{ type: "text/javascript", src: "module_tests" }
+:javascript
+  $(document).ready(function() {
+    window.tests.init();
+  });
+
+.h3= "Hello"
+
+
+#vue_hello
+  %input{ type: "text", 'v-model': 'hello' }
+  .pre
+    {{ hello }}
+
+  .pre
+    {{ calculated_value }}
